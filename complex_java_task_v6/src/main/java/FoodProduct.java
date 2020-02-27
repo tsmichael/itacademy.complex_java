@@ -95,9 +95,9 @@ public class FoodProduct extends Product{
         info += "\nProduct Brand : " + getBrand();
         info += "\nProduct Model :" + getModel();
         info += "\nDate of creation :" + getProductionDate();
-        info += "\nThis product is " + getAge() + " year(s)";
-        info += "\nSuitabilityDuration: " + SuitabilityDuration + " days";
-        info += "\nExpiration date to: " + getExpiredDateValue();
+        //info += "\nThis product is " + getAge() + " year(s)";
+        info += "\nSuitabilityDuration: " + SuitabilityDuration + " days\n";
+        //info += "\nExpiration date to: " + getExpiredDateValue();
         return info;
 
     }

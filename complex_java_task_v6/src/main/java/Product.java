@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
 
 public class Product {
@@ -14,14 +15,14 @@ public class Product {
 
     private String Brand;
     private String Model;
-    private LocalDate ProductionDate = LocalDate.now();
-
+    public LocalDate ProductionDate = LocalDate.of(1,1,1);
+    public static DateTimeFormatter df = DateTimeFormatter.ofPattern("d/MM/yyyy");
     public Product(){}
 
     public Product(String brand, String model, String stringDate) {
-        Brand = brand;
-        Model = model;
-        ProductionDate = LocalDate.parse(stringDate);
+        this.Brand = brand;
+        this.Model = model;
+        this.ProductionDate = LocalDate.parse(stringDate,df);
     }
 
     public void setBrand(String brand) {
@@ -45,7 +46,7 @@ public class Product {
     }
 
     public LocalDate getProductionDate() {
-        return ProductionDate;
+        return this.ProductionDate;
     }
 
     public void input() throws IOException {
@@ -59,7 +60,7 @@ public class Product {
         System.out.println("Input Date of creationProduct 'year-month-day' ");
         String stringDate =keyboard.readLine();
 
-        this.ProductionDate = LocalDate.parse(stringDate);
+        this.ProductionDate = LocalDate.parse(stringDate,df);
     }
 
     public void output(){
@@ -75,13 +76,13 @@ public class Product {
         info += "\nProduct Brand : " + this.Brand;
         info += "\nProduct Model :" + this.Model;
         info += "\nDate of creation :" + this.ProductionDate;
-        info += "\nThis product is " + getAge() + " year(s)";
+        //info += "\nThis product is " + getAge() + " year(s) old\n";
         return info;
     }
 
     public int getAge() {
 
-        int diff = currentTime.getYear() - this.ProductionDate.getYear();
+        int diff = currentTime.getYear() - this.getProductionDate().getYear();
         //System.out.println(diff);
         return diff;
     }
