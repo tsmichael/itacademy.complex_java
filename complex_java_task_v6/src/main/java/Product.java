@@ -15,14 +15,18 @@ public class Product {
 
     private String Brand;
     private String Model;
-    public LocalDate ProductionDate = LocalDate.of(1,1,1);
+    //public LocalDate ProductionDate = LocalDate.of(1,1,1);
+    private String ProductionDate;
+
     public static DateTimeFormatter df = DateTimeFormatter.ofPattern("d/MM/yyyy");
+
     public Product(){}
 
-    public Product(String brand, String model, String stringDate) {
+    public Product(String brand, String model, String productionDate) {
         this.Brand = brand;
         this.Model = model;
-        this.ProductionDate = LocalDate.parse(stringDate,df);
+        //this.ProductionDate = LocalDate.parse(stringDate,df);
+        this.ProductionDate = productionDate;
     }
 
     public void setBrand(String brand) {
@@ -41,12 +45,12 @@ public class Product {
         return Model;
     }
 
-    public void setProductionDate(String stringDate) {
-        ProductionDate = LocalDate.parse(stringDate);
+    public void setProductionDate(String productionDate) {
+        ProductionDate = productionDate;
     }
 
-    public LocalDate getProductionDate() {
-        return this.ProductionDate;
+    public String getProductionDate() {
+        return ProductionDate;
     }
 
     public void input() throws IOException {
@@ -58,9 +62,10 @@ public class Product {
         this.Model = keyboard.readLine();
 
         System.out.println("Input Date of creationProduct 'year-month-day' ");
-        String stringDate =keyboard.readLine();
+        String productionDate = keyboard.readLine();
 
-        this.ProductionDate = LocalDate.parse(stringDate,df);
+        //this.ProductionDate = LocalDate.parse(stringDate,df);
+        ProductionDate = productionDate;
     }
 
     public void output(){
@@ -76,14 +81,13 @@ public class Product {
         info += "\nProduct Brand : " + this.Brand;
         info += "\nProduct Model :" + this.Model;
         info += "\nDate of creation :" + this.ProductionDate;
-        //info += "\nThis product is " + getAge() + " year(s) old\n";
+        info += "\nThis product is " + getAge() + " year(s) old\n";
         return info;
     }
 
     public int getAge() {
-
-        int diff = currentTime.getYear() - this.getProductionDate().getYear();
-        //System.out.println(diff);
+        LocalDate dateOfCreation = LocalDate.parse(ProductionDate,df);
+        int diff = currentTime.getYear() - dateOfCreation.getYear();
         return diff;
     }
 
@@ -94,11 +98,7 @@ public class Product {
             String ModelName1 = p1.getModel().toUpperCase();
             String ModelName2 = p2.getModel().toUpperCase();
 
-            //ascending order
             return ModelName1.compareTo(ModelName2);
-
-            //descending order
-            //return ModelName2.compareTo(ModelName1);
         }
     };
 
@@ -108,11 +108,7 @@ public class Product {
             String BrandName1 = p1.getBrand().toUpperCase();
             String BrandName2 = p2.getBrand().toUpperCase();
 
-            //ascending order
             return BrandName1.compareTo(BrandName2);
-
-            //descending order
-            //return BrandName2.compareTo(BrandName1);
         }
     };
 }

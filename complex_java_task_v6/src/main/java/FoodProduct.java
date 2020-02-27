@@ -1,7 +1,10 @@
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.Period;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import java.util.Calendar;
+import java.util.Locale;
 
 public class FoodProduct extends Product{
     private String FoodType;
@@ -9,8 +12,8 @@ public class FoodProduct extends Product{
 
     public FoodProduct() {}
 
-    public FoodProduct(String brand, String model, String stringDate, String foodType ,int suitabilityProduct) {
-        super(brand, model, stringDate);
+    public FoodProduct(String brand, String model, String productionDate, String foodType ,int suitabilityProduct) {
+        super(brand, model, productionDate);
         FoodType = foodType;
         SuitabilityDuration = suitabilityProduct;
     }
@@ -35,13 +38,14 @@ public class FoodProduct extends Product{
     //get the DATE of EXPIRATION
     public LocalDate getExpiredDateValue() {
 
+        LocalDate dateOfCreation = LocalDate.parse(getProductionDate(),df);
+
         Calendar c = Calendar.getInstance();
         c.clear();
-
         // add to Calendar values of ProductionDate  < year , month , day >
-        c.set(Calendar.YEAR, getProductionDate().getYear() );
-        c.set(Calendar.MONTH, getProductionDate().getMonth().getValue()-1 );
-        c.set(Calendar.DAY_OF_MONTH, getProductionDate().getDayOfMonth());
+        c.set(Calendar.YEAR, dateOfCreation.getYear() );
+        c.set(Calendar.MONTH, dateOfCreation.getMonth().getValue()-1 );
+        c.set(Calendar.DAY_OF_MONTH, dateOfCreation.getDayOfMonth());
 
         // adding SuitabilityDuration to ProductionDate for finding [DATE - OF - EXPIRED]
         c.add(c.DAY_OF_MONTH, SuitabilityDuration);
@@ -53,10 +57,12 @@ public class FoodProduct extends Product{
     }
 
     //output to console information of EXPIRATION of FoodProduct
-    public void getExpiredDate(){
+    public String outExpiredDate(){
 
         LocalDate expDate = getExpiredDateValue();
-        System.out.println("Expiration date : " +expDate);
+        String formattedDate = expDate.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT));
+        //System.out.println("Expiration date : " +expDate);
+        return formattedDate;
     }
 
     //find values for FoodProducts which already expired
@@ -95,9 +101,9 @@ public class FoodProduct extends Product{
         info += "\nProduct Brand : " + getBrand();
         info += "\nProduct Model :" + getModel();
         info += "\nDate of creation :" + getProductionDate();
-        //info += "\nThis product is " + getAge() + " year(s)";
-        info += "\nSuitabilityDuration: " + SuitabilityDuration + " days\n";
-        //info += "\nExpiration date to: " + getExpiredDateValue();
+        info += "\nThis product is " + getAge() + " year(s)";
+        info += "\nSuitabilityDuration: " + SuitabilityDuration + " days";
+        info += "\nExpiration date is: " + outExpiredDate() + "\n";
         return info;
 
     }
