@@ -11,7 +11,7 @@ public class Serialization {
 
     public static void serializeToXML (ArrayList<Product> productList) throws IOException
     {
-        FileOutputStream fos = new FileOutputStream("wserializeFile.xml");
+        FileOutputStream fos = new FileOutputStream("serializeFile.xml");
         XMLEncoder encoder = new XMLEncoder(fos);
         encoder.setExceptionListener(new ExceptionListener() {
             public void exceptionThrown(Exception e) {
@@ -30,7 +30,7 @@ public class Serialization {
     //deserialization
     public static ArrayList<Product> deserializeFromXML() throws IOException {
 
-        FileInputStream fis = new FileInputStream("wserializeFile.xml");
+        FileInputStream fis = new FileInputStream("serializeFile.xml");
         XMLDecoder decoder = new XMLDecoder(fis);
 
         ArrayList<Product>  decodedList = ((ArrayList<Product>) decoder.readObject());
