@@ -1,7 +1,7 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class UnitTests {
+public class compareAgeInYears {
 
     @Test
     public void test_getAge(){
