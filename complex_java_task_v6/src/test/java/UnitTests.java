@@ -10,6 +10,6 @@ public class UnitTests {
 
         int age_tested = example1.getAge();
 
-        Assert.assertEquals(age_tested, 14);
+        Assert.assertEquals(age_tested, 15);
     }
 }
