@@ -48,7 +48,7 @@ public class Menu {
                     }
                     break;
                 case 3:
-                    System.out.println("\n--------------------SortedByBrand----------------------------------");
+                    System.out.println("\n--------------------SortedBy_Brand----------------------------------");
                     Collections.sort(productList,Product.BrandComparator);
                     iterator = 0;
                     for(Product object_p : productList){
@@ -57,7 +57,7 @@ public class Menu {
                     }
                     break;
                 case 4:
-                    System.out.println("\n--------------------SortedByModel----------------------------------");
+                    System.out.println("\n--------------------SortedBy_Model----------------------------------");
                     Collections.sort(productList,Product.ModelComparator);
                     iterator = 0;
                     for(Product object_p : productList){
@@ -67,7 +67,8 @@ public class Menu {
                     break;
                 case 5:
                     System.out.println("\n---------------Expired FoodProducts------------------------------------");
-                    Expired.findExpiredFoodProducts(productList);
+                    ArrayList<Product> expiredList = Expired.findExpiredFoodProducts(productList);
+                    System.out.println(expiredList);
                     break;
                 case 6:
                     FileIn.inputToFile(productList);

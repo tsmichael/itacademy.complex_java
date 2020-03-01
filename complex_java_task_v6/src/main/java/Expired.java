@@ -2,16 +2,20 @@ import java.util.ArrayList;
 
 public class Expired {
 
-    public static void findExpiredFoodProducts(ArrayList<Product> productList){
+    public static ArrayList<Product> findExpiredFoodProducts(ArrayList<Product> productList){
         System.out.println("Expired FoodProducts  => ");
+
+        ArrayList<Product> returnedList = new ArrayList<>();
 
         for (Product object : productList) {
             if(object instanceof FoodProduct){
                 if(((FoodProduct) object).outExpiredProducts()<0){ // output FoodProducts which expired
-                    System.out.println(object);
+                    returnedList.add(object);
                 }
             }
         }
+
+        return returnedList;
     }
 }
  // MEthods of BO non console - JUST RETURN
