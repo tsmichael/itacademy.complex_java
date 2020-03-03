@@ -42,6 +42,7 @@ public class TestClass {
         game_zone.click();
 
         WebElement game_zone_games = driver.findElement(By.xpath("//a[contains(text(),'Ігри')]"));
+
         game_zone_games.click();
         System.out.println("1");
         Thread.sleep(2000);
