@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0-25" class="java.beans.XMLDecoder">
+ <object class="java.util.ArrayList">
+  <void method="add">
+   <object class="Product">
+    <void property="brand">
+     <string>Apple</string>
+    </void>
+    <void property="model">
+     <string>iMac</string>
+    </void>
+    <void property="productionDate">
+     <string>19/05/2005</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Product">
+    <void property="brand">
+     <string>Ford</string>
+    </void>
+    <void property="model">
+     <string>Sedan</string>
+    </void>
+    <void property="productionDate">
+     <string>01/09/1998</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Product">
+    <void property="brand">
+     <string>Acer</string>
+    </void>
+    <void property="model">
+     <string>Aspire</string>
+    </void>
+    <void property="productionDate">
+     <string>03/02/2003</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Product">
+    <void property="brand">
+     <string>AWC</string>
+    </void>
+    <void property="model">
+     <string>BlackBerry</string>
+    </void>
+    <void property="productionDate">
+     <string>11/11/2011</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="FoodProduct">
+    <void property="brand">
+     <string>Dolche</string>
+    </void>
+    <void property="foodType">
+     <string>Yogurt</string>
+    </void>
+    <void property="model">
+     <string>Elite</string>
+    </void>
+    <void property="productionDate">
+     <string>26/09/2016</string>
+    </void>
+    <void property="suitabilityDuration">
+     <int>14</int>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="FoodProduct">
+    <void property="brand">
+     <string>Yamaika.Transition</string>
+    </void>
+    <void property="foodType">
+     <string>banana</string>
+    </void>
+    <void property="model">
+     <string>long_yellow</string>
+    </void>
+    <void property="productionDate">
+     <string>27/01/2019</string>
+    </void>
+    <void property="suitabilityDuration">
+     <int>30</int>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="FoodProduct">
+    <void property="brand">
+     <string>Green word</string>
+    </void>
+    <void property="foodType">
+     <string>Garlic</string>
+    </void>
+    <void property="model">
+     <string>Home</string>
+    </void>
+    <void property="productionDate">
+     <string>05/09/1999</string>
+    </void>
+    <void property="suitabilityDuration">
+     <int>60</int>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>
