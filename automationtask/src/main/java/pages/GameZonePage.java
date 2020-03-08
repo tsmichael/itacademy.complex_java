@@ -2,18 +2,20 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class GameZonePage extends BasePage {
-    //element of game_zone_page consist of big section of games
-    By game_zone_games = By.xpath("//a[contains(text(),'Ігри')]");
 
+    By game_zone_games = By.xpath("//img[contains(@alt,'Ігри')]");
 
-    public GameZonePage(WebDriver driver){super(driver);}
+    public GameZonePage(WebDriver driver) {
+        super(driver);
+    }
 
-    public GamesPage openGamePage() throws InterruptedException {
-        Thread.sleep(3000);
+    //Go to Game Page
+    public GamesPage openGamePage() {
+
         click(game_zone_games);
+        System.out.println("Go to from GameZonePage -> to GamesPage");
         return new GamesPage(driver);
     }
 }

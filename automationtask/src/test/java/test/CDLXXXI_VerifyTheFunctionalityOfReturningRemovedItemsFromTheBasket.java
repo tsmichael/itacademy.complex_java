@@ -5,23 +5,22 @@ import org.testng.annotations.Test;
 import pages.BasketPage;
 import pages.HomePage;
 
-public class MyTest extends BaseTest {
+public class CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket extends BaseTest {
 
     @Test
-    public void testMyTest() throws InterruptedException {
+    public void test_CDLXXXI_verifyTheFunctionalityOfReturningRemovedItemsFromTheBasket(){
 
         HomePage testEx = new HomePage(driver);
 
         testEx.useHeaderItems()
-                .changeLanguage()
+                .changeLanguageToUkrainian()
                 .useHomePageItems()
                 .openGameZonePage()
                 .openGamePage()
                 .filterSettings()
                 .fillRangeOfPrice("1280","2800")
                 .confirmFilterSearch()
-                //.sortOrderByPopularity()
-                .find_and_purchaseGame("Гра Metro")
+                .clickPurchaseGame("Гра Metro")
                 .deleteItem()
                 .backToGamePage()
                 .useHeaderItems()
@@ -29,8 +28,8 @@ public class MyTest extends BaseTest {
                 .returnDeletedItemToBasket()
                 .getActualResult();
 
-        BasketPage bpobj = new BasketPage(driver);
+        BasketPage compareObject = new BasketPage(driver);
 
-        Assert.assertEquals(bpobj.getActualResult(),"Гра Metro Exodus Видання першого дня (PS4, Російська версія)");
+        Assert.assertEquals(compareObject.getActualResult(),"Гра Metro Exodus Видання першого дня (PS4, Російська версія)");
     }
 }

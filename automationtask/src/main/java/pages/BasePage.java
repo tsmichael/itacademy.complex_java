@@ -5,7 +5,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -16,50 +15,52 @@ public class BasePage {
     public WebDriver driver;
     public WebDriverWait wait;
 
+
     public BasePage(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, 15);
     }
 
-    void waitVisibilityClicability(By elementBy){}
 
-    void waitVisibilityClicability(WebElement elementWeb){
+    // Waiter for WebElements
+    void waitToBeClicked(WebElement elementWeb) {
         wait.until(
                 ExpectedConditions.elementToBeClickable(elementWeb));
-
     }
 
-    //void waitwait (WebElement elementWeb){ driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);}
-
+    // Waiter for By elements
     void waitVisibility(By elementBy) {
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
-    //Click Method
+    // Click Method for By elements
     void click(By elementBy) {
         waitVisibility(elementBy);
         driver.findElement(elementBy).click();
     }
 
-    String getText(By elementBy){
-       return driver.findElement(elementBy).getText();
-    }
-
-    void click(WebElement elementWeb){
-        waitVisibilityClicability(elementWeb);
+    // Click for WebElement
+    void click(WebElement elementWeb) {
+        waitToBeClicked(elementWeb);
         Actions actions = new Actions(driver);
         actions.click(elementWeb).build().perform();
-        //elementWeb.click();
     }
 
-    //Write text
+    // getText from the element
+    String getText(By elementBy) {
+        return driver.findElement(elementBy).getText();
+    }
+
+
+    // Write text ->  data entry in the field
     void writeText(By elementBy, String text) {
         waitVisibility(elementBy);
         driver.findElement(elementBy).sendKeys(text);
     }
 
-    void sendHotKeyCtrlA(By elementBy){
+    // Using Ctrl+A hot key combination
+    void sendHotKeyCtrlA(By elementBy) {
         waitVisibility(elementBy);
-        driver.findElement(elementBy).sendKeys(Keys.chord(Keys.CONTROL,"a"));
+        driver.findElement(elementBy).sendKeys(Keys.chord(Keys.CONTROL, "a"));
     }
 }

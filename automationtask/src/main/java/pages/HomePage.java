@@ -2,7 +2,6 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
 public class HomePage extends BasePage {
 
@@ -11,20 +10,22 @@ public class HomePage extends BasePage {
     //element of catalog
     By game_zone = By.xpath("//a/span[contains(text(),'Гральна зона')]");
 
+    public HomePage(WebDriver driver) {
+        super(driver);
+    }
 
-    public Header useHeaderItems(){
-
+    // Access for using Header panel
+    public Header useHeaderItems() {
+        System.out.println("Now you can use elements of Header");
         return new Header(driver);
     }
 
+    // Go to GameZone Page
     public GameZonePage openGameZonePage() {
         click(catalog);
         click(game_zone);
-
+        System.out.println("From HomePage -> to GameZonePage");
         return new GameZonePage(driver);
     }
 
-    public HomePage(WebDriver driver){
-        super(driver);
-    }
 }

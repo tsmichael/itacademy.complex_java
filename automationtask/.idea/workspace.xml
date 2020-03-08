@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a5197300-bc08-42d1-a691-63e4feca1c93" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasketPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasketPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/GameZonePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/GameZonePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/GamesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/GamesPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/Header.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/MyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/TestClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/TestClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/MyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../complex_java_task_v6/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../complex_java_task_v6/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../complex_java_task_v6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../complex_java_task_v6/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="true" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/test/TestClass.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1632">
-              <caret line="105" column="67" selection-start-line="105" selection-start-column="67" selection-end-line="105" selection-end-column="67" />
+            <state relative-caret-position="408">
+              <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -40,74 +45,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/BasketPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/test/MyTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/GamesPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/Header.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="578">
+              <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/GameZonePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/BasePage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1237#1238#0" expanded="true" />
-                <element signature="e#1298#1299#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -129,17 +72,18 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/test/java/test/Test.java" />
-        <option value="$PROJECT_DIR$/src/test/java/test/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/Header.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/GameZonePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/TestClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/BasePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/GamesPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/BaseTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/test/MyTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/test/CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/Header.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/GameZonePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/BasketPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/GamesPage.java" />
       </list>
     </option>
   </component>
@@ -221,7 +165,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Новая папка/itacademy.complex_java/complex_java_task_v6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -244,8 +188,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.MyTest">
-    <configuration name="MyTest" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket (1)">
+    <configuration name="CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com.walmart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="automationtask" />
       <extension name="coverage">
         <pattern>
@@ -254,8 +215,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.MyTest" />
+      <option name="MAIN_CLASS_NAME" value="test.CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket.testMyTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="com.walmart" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket" />
+      <option name="METHOD_NAME" value="testMyTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -299,7 +278,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.MyTest" />
+        <item itemvalue="TestNG.CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket (1)" />
+        <item itemvalue="TestNG.CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket.testMyTest" />
+        <item itemvalue="TestNG.CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket" />
         <item itemvalue="TestNG.TestClass" />
         <item itemvalue="TestNG.TestClass.openURL" />
       </list>
@@ -327,43 +308,45 @@
       <workItem from="1583596877711" duration="566000" />
       <workItem from="1583597676392" duration="11788000" />
       <workItem from="1583667124701" duration="4078000" />
+      <workItem from="1583677191506" duration="3685000" />
+      <workItem from="1583685748900" duration="9336000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MyTest - 2020.03.08 at 14h 09m 49s.xml">
-      <configuration name="MyTest" configurationId="TestNG" />
+    <history-entry file="MyTest_testMyTest - 2020.03.08 at 18h 45m 40s.xml">
+      <configuration name="MyTest.testMyTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MyTest - 2020.03.08 at 14h 12m 27s.xml">
-      <configuration name="MyTest" configurationId="TestNG" />
+    <history-entry file="MyTest_testMyTest - 2020.03.08 at 19h 39m 21s.xml">
+      <configuration name="MyTest.testMyTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MyTest - 2020.03.08 at 14h 18m 59s.xml">
-      <configuration name="MyTest" configurationId="TestNG" />
+    <history-entry file="MyTest_testMyTest - 2020.03.08 at 19h 48m 41s.xml">
+      <configuration name="MyTest.testMyTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MyTest - 2020.03.08 at 14h 21m 46s.xml">
-      <configuration name="MyTest" configurationId="TestNG" />
+    <history-entry file="MyTest_testMyTest - 2020.03.08 at 19h 49m 07s.xml">
+      <configuration name="MyTest.testMyTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MyTest - 2020.03.08 at 14h 23m 03s.xml">
-      <configuration name="MyTest" configurationId="TestNG" />
+    <history-entry file="MyTest_testMyTest - 2020.03.08 at 20h 00m 13s.xml">
+      <configuration name="MyTest.testMyTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MyTest - 2020.03.08 at 14h 26m 54s.xml">
-      <configuration name="MyTest" configurationId="TestNG" />
+    <history-entry file="CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket_testMyTest - 2020.03.08 at 21h 27m 24s.xml">
+      <configuration name="CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket.testMyTest" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MyTest - 2020.03.08 at 14h 30m 24s.xml">
-      <configuration name="MyTest" configurationId="TestNG" />
+    <history-entry file="CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket_(1) - 2020.03.08 at 21h 39m 06s.xml">
+      <configuration name="CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MyTest - 2020.03.08 at 14h 32m 37s.xml">
-      <configuration name="MyTest" configurationId="TestNG" />
+    <history-entry file="CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket_(1) - 2020.03.08 at 21h 46m 55s.xml">
+      <configuration name="CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MyTest - 2020.03.08 at 14h 37m 37s.xml">
-      <configuration name="MyTest" configurationId="TestNG" />
+    <history-entry file="CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket_(1) - 2020.03.08 at 22h 05m 31s.xml">
+      <configuration name="CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MyTest - 2020.03.08 at 14h 40m 35s.xml">
-      <configuration name="MyTest" configurationId="TestNG" />
+    <history-entry file="CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket_(1) - 2020.03.08 at 22h 07m 41s.xml">
+      <configuration name="CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket (1)" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="78639000" />
+    <option name="totallyTimeSpent" value="91660000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -374,7 +357,7 @@
       <window_info id="Capture Tool" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.501634" side_tool="true" weight="0.1735474" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.498366" visible="true" weight="0.18381241" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.498366" visible="true" weight="0.2322239" />
       <window_info id="Structure" order="6" sideWeight="0.501634" side_tool="true" weight="0.1735474" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -383,8 +366,8 @@
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
       <window_info anchor="bottom" id="Find" order="6" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.48025277" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="7" visible="true" weight="0.08688784" />
+      <window_info anchor="bottom" id="Debug" order="8" weight="0.39968404" />
       <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3270142" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
@@ -434,6 +417,18 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/test/BaseTest.java</url>
+          <line>23</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/pages.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/Header.java" />
@@ -444,10 +439,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/HomePage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/TestClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="1615">
+          <caret line="105" column="67" selection-start-line="105" selection-start-column="67" selection-end-line="105" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -456,18 +451,81 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/test/BaseTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="21" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        <state relative-caret-position="276">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#633#634#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/test/CDLXXXI_VerifyTheFunctionalityOfReturningRemovedItemsFromTheBasket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/TestClass.java">
+    <entry file="file://$PROJECT_DIR$/target/classes/pages/BasketPage.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/automationtask.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/BasketPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1632">
-          <caret line="105" column="67" selection-start-line="105" selection-start-column="67" selection-end-line="105" selection-end-column="67" />
+        <state relative-caret-position="272">
+          <caret line="18" column="117" selection-start-line="18" selection-start-column="58" selection-end-line="18" selection-end-column="117" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/GamesPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="59" column="63" selection-start-line="59" selection-start-column="63" selection-end-line="59" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#997#998#0" expanded="true" />
+            <element signature="e#1026#1027#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/BasePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#876#877#0" expanded="true" />
+            <element signature="e#954#955#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/GameZonePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#336#337#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="26" column="60" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -476,60 +534,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/Header.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/GameZonePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/BasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1237#1238#0" expanded="true" />
-            <element signature="e#1298#1299#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/GamesPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/test/MyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/BasketPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="77" column="5" lean-forward="true" selection-start-line="77" selection-start-column="5" selection-end-line="77" selection-end-column="5" />
+        <state relative-caret-position="578">
+          <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

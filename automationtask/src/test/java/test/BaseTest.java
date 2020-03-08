@@ -2,6 +2,7 @@ package test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
@@ -16,5 +17,10 @@ public class BaseTest {
         driver.manage().window().maximize();
         Thread.sleep(2000);
 
+    }
+
+    @AfterClass
+    public void close(){
+        driver.quit();
     }
 }
