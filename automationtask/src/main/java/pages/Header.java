@@ -13,7 +13,7 @@ public class Header extends BasePage {
     By ua_active = By.xpath("//div[contains(@class,'header__lang-switch-wrap')]" +
             "/a[contains(@data-value,'ua')]");
     //basket icon
-    By basket_icon =
+    By basket_icon = By.id("cart-button");
 
     public Header(WebDriver driver) {
         super(driver);
@@ -28,6 +28,11 @@ public class Header extends BasePage {
     public HomePage useHomePageItems(){
 
         return new HomePage(driver);
+    }
+
+    public BasketPage openBasketPage(){
+        click(basket_icon);
+        return new BasketPage(driver);
     }
 
 }

@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.WeakHashMap;
 
@@ -66,9 +67,14 @@ public class GamesPage extends BasePage {
 
     public By getProduct(String nameProduct){
 
-        return By.xpath("//a[contains(text(), '"+nameProduct+"')]/../../" +
+        By btn_purchase = By.xpath("//a[contains(text(), '"+nameProduct+"')]/../../" +
                 "button[@class='product-tile_button product-tile_button--buy button_buy_product tc-anim js-add-to-cart gtm-buy-product']");
+        wait.until(
+                ExpectedConditions.visibilityOfElementLocated(btn_purchase));
 
+        return btn_purchase;
+
+//
     }
 
 

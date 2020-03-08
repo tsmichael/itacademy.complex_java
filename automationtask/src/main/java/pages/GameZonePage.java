@@ -11,7 +11,8 @@ public class GameZonePage extends BasePage {
 
     public GameZonePage(WebDriver driver){super(driver);}
 
-    public GamesPage openGamePage(){
+    public GamesPage openGamePage() throws InterruptedException {
+        Thread.sleep(3000);
         click(game_zone_games);
         return new GamesPage(driver);
     }

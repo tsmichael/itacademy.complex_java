@@ -5,6 +5,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -78,19 +79,35 @@ public class TestClass {
         //List<WebElement> a = driver.findElements(By.xpath("//div/section[contains(@class,'product-tile_product productContainer ')]"));
         //int aa= a.size();
 
-        WebElement sortList =driver.findElement(By.id("catalog-sort"));
-                //driver.findElement(By.xpath("//select[@name='sort']"));
-        sortList.click();
+//        WebElement sortList =driver.findElement(By.id("catalog-sort"));
+//                //driver.findElement(By.xpath("//select[@name='sort']"));
+//        sortList.click();
 
-        WebElement sortByPopularity = driver.findElement(By.xpath("//select[@name='sort']/option[@value='weeklyrate-desc']"));
-        sortByPopularity.click();
-
+//        WebElement sortByPopularity = driver.findElement(By.xpath("//select[@name='sort']/option[@value='weeklyrate-desc']"));
+//        sortByPopularity.click();
+        Thread.sleep(3000);
         WebElement btn_Purchase = driver.findElement((By.xpath("//a[contains(text(),'Гра Metro')]/../../" +
                 "button[@class='product-tile_button product-tile_button--buy button_buy_product tc-anim js-add-to-cart gtm-buy-product']")));
 
         btn_Purchase.click();
 
+        WebElement trashBin = driver.findElement(By.xpath("//div/*[name()='svg']/*[name()='use' and @*='#remove']/.."));
+        System.out.println('5');
+//        trashBin.click();***
+        Thread.sleep(3000);
+        Actions actions = new Actions(driver);
 
+        actions.click(trashBin).build().perform();
+        Thread.sleep(3000);
+        System.out.println('6');
+        WebElement llabel_returnDeletedItem = driver.findElement(By.xpath("//span[@class='cart-empty__recovery-link']"));
+        System.out.println('7');
+        Actions actions2 = new Actions(driver);
+        actions2.click(llabel_returnDeletedItem).build().perform();
+        System.out.println('8');
+
+        WebElement close_cross = driver.findElement(By.xpath("//div[@class='modal__container']/*[name()='svg']/*[name()='use']/.."));
+        actions.click(close_cross).build().perform();
     }
 
 
