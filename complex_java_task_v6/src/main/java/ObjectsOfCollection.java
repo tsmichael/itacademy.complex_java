@@ -13,7 +13,7 @@ public class ObjectsOfCollection {
 
         Product fproduct1 =new FoodProduct("Dolche", "Elite", "26/09/2016","Yogurt",14);
         Product fproduct2 =new FoodProduct("Yamaika.Transition", "long_yellow", "27/01/2019","banana",30);
-        Product fproduct3 =new FoodProduct("Green word", "Home", "05/09/1999","Garlic",60);
+        Product fproduct3 =new FoodProduct("Green world", "Home", "05/09/1999","Garlic",60);
 
         example.add(product1);
         example.add(product2);

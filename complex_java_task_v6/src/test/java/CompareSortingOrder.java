@@ -29,7 +29,7 @@ public class CompareSortingOrder {
         expectedList.add(example4);
         expectedList.add(example2);
 
-        Collections.sort(listForTest,Product.BrandComparator);
+        Collections.sort(listForTest,SortOrders.BrandComparator);
 
         ArrayList<Product> actualList = listForTest;
 
@@ -62,7 +62,7 @@ public class CompareSortingOrder {
         expectedList.add(example3);
         expectedList.add(example2);
 
-        Collections.sort(listForTest,Product.ModelComparator);
+        Collections.sort(listForTest,SortOrders.ModelComparator);
 
         ArrayList<Product> actualList = listForTest;
 

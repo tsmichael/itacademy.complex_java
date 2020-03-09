@@ -22,7 +22,6 @@ public class CompareExpiredLists {
         ArrayList<Product> expectedList = new ArrayList<>();
 
         expectedList.add(example1);
-        //expectedList.add(example2);
         expectedList.add(example3);
 
         ArrayList<Product> actualList = Expired.findExpiredFoodProducts(listForTest);

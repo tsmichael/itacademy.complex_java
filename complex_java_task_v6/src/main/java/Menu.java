@@ -54,7 +54,7 @@ public class Menu {
                     break;
                 case 3:
                     System.out.println("\n--------------------SortedBy_Brand----------------------------------");
-                    Collections.sort(productList, Product.BrandComparator);
+                    Collections.sort(productList, SortOrders.BrandComparator);
                     iterator = 1;
                     for (Product object_p : productList) {
                         System.out.println(iterator + "." + object_p);
@@ -66,7 +66,7 @@ public class Menu {
                     break;
                 case 4:
                     System.out.println("\n--------------------SortedBy_Model----------------------------------");
-                    Collections.sort(productList, Product.ModelComparator);
+                    Collections.sort(productList, SortOrders.ModelComparator);
                     iterator = 1;
                     for (Product object_p : productList) {
                         System.out.println(iterator + "." + object_p);
