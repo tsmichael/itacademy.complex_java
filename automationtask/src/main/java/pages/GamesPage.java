@@ -78,3 +78,4 @@ public class GamesPage extends BasePage {
         return new Header(driver);
     }
 }
+
