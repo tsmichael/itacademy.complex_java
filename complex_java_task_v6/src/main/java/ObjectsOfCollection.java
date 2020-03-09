@@ -2,6 +2,7 @@ import java.util.ArrayList;
 
 public class ObjectsOfCollection {
 
+    // class-method where i have hardcoded data for objects of classes
     public static ArrayList<Product> getObjectsForCollection(){
         ArrayList<Product> example =new ArrayList<>();
 

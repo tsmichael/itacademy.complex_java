@@ -10,14 +10,10 @@ public class Expired {
         for (Product object : productList) {
             if(object instanceof FoodProduct){
                 if(((FoodProduct) object).outExpiredProducts()<0){ // output FoodProducts which expired
-                    returnedList.add(object);
+                    returnedList.add(object);                       // negative value means FoodProduct is expired
                 }
             }
         }
-
         return returnedList;
     }
 }
- // MEthods of BO non console - JUST RETURN
-
-//RETURN

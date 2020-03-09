@@ -5,4 +5,3 @@ AWC,BlackBerry,11/11/2011
 Dolche,Elite,26/09/2016,Yogurt,14
 Yamaika.Transition,long_yellow,27/01/2019,banana,30
 Green word,Home,05/09/1999,Garlic,60
-Koko,Chanel,11/11/2011,toiletWatter,300

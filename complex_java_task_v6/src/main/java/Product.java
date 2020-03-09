@@ -2,6 +2,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.time.LocalDate;
+import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
 
@@ -9,7 +10,7 @@ public class Product {
     // current time in the world
     LocalDate currentTime = LocalDate.now();
     // for console input
-    InputStreamReader stream_Reader = new InputStreamReader(System.in) ;
+    InputStreamReader stream_Reader = new InputStreamReader(System.in);
     BufferedReader keyboard = new BufferedReader(stream_Reader);
 
 
@@ -20,7 +21,8 @@ public class Product {
 
     public static DateTimeFormatter df = DateTimeFormatter.ofPattern("d/MM/yyyy");
 
-    public Product(){}
+    public Product() {
+    }
 
     public Product(String brand, String model, String productionDate) {
         this.Brand = brand;
@@ -63,19 +65,18 @@ public class Product {
         System.out.println("Input Date of creationProduct 'day/month/year' ");
         String productionDate = keyboard.readLine();
 
-        //this.ProductionDate = LocalDate.parse(stringDate,df);
         ProductionDate = productionDate;
     }
 
-    public void output(){
+    public void output() {
         System.out.println("Product Brand : " + this.Brand);
         System.out.println("Product Model : " + this.Model);
         System.out.println("Production Date : " + this.ProductionDate);
     }
 
     @Override
-    public String toString(){
-        String info ="";
+    public String toString() {
+        String info = "";
         info += "\nBelongs to [ Product ] ";
         info += "\nProduct Brand : " + this.Brand;
         info += "\nProduct Model :" + this.Model;
@@ -85,9 +86,9 @@ public class Product {
     }
 
     public int getAge() {
-        LocalDate dateOfCreation = LocalDate.parse(ProductionDate,df);
-        int diff = currentTime.getYear() - dateOfCreation.getYear();
-        return diff;
+        LocalDate dateOfCreation = LocalDate.parse(ProductionDate, df);
+        Period intervalPeriod = Period.between(dateOfCreation, currentTime);
+        return intervalPeriod.getYears();
     }
 
 

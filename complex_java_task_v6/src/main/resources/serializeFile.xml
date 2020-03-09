@@ -4,6 +4,32 @@
   <void method="add">
    <object class="Product">
     <void property="brand">
+     <string>Apple</string>
+    </void>
+    <void property="model">
+     <string>iMac</string>
+    </void>
+    <void property="productionDate">
+     <string>19/05/2005</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Product">
+    <void property="brand">
+     <string>Ford</string>
+    </void>
+    <void property="model">
+     <string>Sedan</string>
+    </void>
+    <void property="productionDate">
+     <string>01/09/1998</string>
+    </void>
+   </object>
+  </void>
+  <void method="add">
+   <object class="Product">
+    <void property="brand">
      <string>Acer</string>
     </void>
     <void property="model">
@@ -30,25 +56,6 @@
   <void method="add">
    <object class="FoodProduct">
     <void property="brand">
-     <string>Koko</string>
-    </void>
-    <void property="foodType">
-     <string>toiletWatter</string>
-    </void>
-    <void property="model">
-     <string>Chanel</string>
-    </void>
-    <void property="productionDate">
-     <string>11/11/2011</string>
-    </void>
-    <void property="suitabilityDuration">
-     <int>300</int>
-    </void>
-   </object>
-  </void>
-  <void method="add">
-   <object class="FoodProduct">
-    <void property="brand">
      <string>Dolche</string>
     </void>
     <void property="foodType">
@@ -62,38 +69,6 @@
     </void>
     <void property="suitabilityDuration">
      <int>14</int>
-    </void>
-   </object>
-  </void>
-  <void method="add">
-   <object class="FoodProduct">
-    <void property="brand">
-     <string>Green word</string>
-    </void>
-    <void property="foodType">
-     <string>Garlic</string>
-    </void>
-    <void property="model">
-     <string>Home</string>
-    </void>
-    <void property="productionDate">
-     <string>05/09/1999</string>
-    </void>
-    <void property="suitabilityDuration">
-     <int>60</int>
-    </void>
-   </object>
-  </void>
-  <void method="add">
-   <object class="Product">
-    <void property="brand">
-     <string>Apple</string>
-    </void>
-    <void property="model">
-     <string>iMac</string>
-    </void>
-    <void property="productionDate">
-     <string>19/05/2005</string>
     </void>
    </object>
   </void>
@@ -117,15 +92,21 @@
    </object>
   </void>
   <void method="add">
-   <object class="Product">
+   <object class="FoodProduct">
     <void property="brand">
-     <string>Ford</string>
+     <string>Green word</string>
+    </void>
+    <void property="foodType">
+     <string>Garlic</string>
     </void>
     <void property="model">
-     <string>Sedan</string>
+     <string>Home</string>
     </void>
     <void property="productionDate">
-     <string>01/09/1998</string>
+     <string>05/09/1999</string>
+    </void>
+    <void property="suitabilityDuration">
+     <int>60</int>
     </void>
    </object>
   </void>
