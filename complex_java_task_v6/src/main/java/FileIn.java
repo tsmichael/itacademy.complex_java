@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class FileIn {
 
     public static void inputToFile(ArrayList<Product> productList) throws IOException {
-        String FileName = "E:/java.code/_complex_java_git/complex_java_task_v6/src/main/resources/savedListObjects.txt";
+        String FileName = "src/main/resources/savedListObjects.txt";
 
         FileWriter nFile = new FileWriter(FileName);
 

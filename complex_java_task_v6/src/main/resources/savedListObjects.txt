@@ -1,8 +1,8 @@
-Acer,Aspire,2003-02-03
-AWC,BlackBerry,2011-11-11
-Dolche,Elite,2016-09-26,Yogurt,14
-Green word,Home,1999-09-05,Garlic,60
-Apple,iMac,2005-05-19
-Kinotavr,Koko,2005-05-01,kinisuit,20
-Yamaika.Transition,long_yellow,2019-01-27,banana,30
-Ford,Sedan,1998-09-01
+Apple,iMac,19/05/2005
+Ford,Sedan,01/09/1998
+Acer,Aspire,03/02/2003
+AWC,BlackBerry,11/11/2011
+Dolche,Elite,26/09/2016,Yogurt,14
+Yamaika.Transition,long_yellow,27/01/2019,banana,30
+Green word,Home,05/09/1999,Garlic,60
+Koko,Chanel,11/11/2011,toiletWatter,300

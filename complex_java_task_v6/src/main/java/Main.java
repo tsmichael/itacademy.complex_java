@@ -6,14 +6,5 @@ public class Main {
         Menu ui =new Menu();
         ui.o_Menu();
 
-
-//        ArrayList<Product> ppp = new ArrayList<>();
-//        Product fp =new FoodProduct("Green word", "Home", "2019-10-05","Garlic",60);
-//        ppp.add(fp);
-//
-//
-//        Expired.findExpiredFoodProducts(ppp);
-
-
     }
 }

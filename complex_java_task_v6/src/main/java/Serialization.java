@@ -11,7 +11,7 @@ public class Serialization {
 
     public static void serializeToXML (ArrayList<Product> productList) throws IOException
     {
-        FileOutputStream fos = new FileOutputStream("serializeFile.xml");
+        FileOutputStream fos = new FileOutputStream("src/main/resources/serializeFile.xml");
         XMLEncoder encoder = new XMLEncoder(fos);
         encoder.setExceptionListener(new ExceptionListener() {
             public void exceptionThrown(Exception e) {
@@ -20,8 +20,6 @@ public class Serialization {
         });
 
         encoder.writeObject(productList);
-//        for (Product object : proba)
-//            encoder.writeObject(object);
 
         encoder.close();
         fos.close();
@@ -30,7 +28,7 @@ public class Serialization {
     //deserialization
     public static ArrayList<Product> deserializeFromXML() throws IOException {
 
-        FileInputStream fis = new FileInputStream("serializeFile.xml");
+        FileInputStream fis = new FileInputStream("src/main/resources/serializeFile.xml");
         XMLDecoder decoder = new XMLDecoder(fis);
 
         ArrayList<Product>  decodedList = ((ArrayList<Product>) decoder.readObject());

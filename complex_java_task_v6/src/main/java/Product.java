@@ -6,16 +6,16 @@ import java.time.format.DateTimeFormatter;
 import java.util.Comparator;
 
 public class Product {
-    //current time in the world
+    // current time in the world
     LocalDate currentTime = LocalDate.now();
-    // for inputting from console
+    // for console input
     InputStreamReader stream_Reader = new InputStreamReader(System.in) ;
     BufferedReader keyboard = new BufferedReader(stream_Reader);
 
 
     private String Brand;
     private String Model;
-    //public LocalDate ProductionDate = LocalDate.of(1,1,1);
+
     private String ProductionDate;
 
     public static DateTimeFormatter df = DateTimeFormatter.ofPattern("d/MM/yyyy");
@@ -25,7 +25,6 @@ public class Product {
     public Product(String brand, String model, String productionDate) {
         this.Brand = brand;
         this.Model = model;
-        //this.ProductionDate = LocalDate.parse(stringDate,df);
         this.ProductionDate = productionDate;
     }
 
@@ -61,7 +60,7 @@ public class Product {
         System.out.println("Input name of Model ");
         this.Model = keyboard.readLine();
 
-        System.out.println("Input Date of creationProduct 'year-month-day' ");
+        System.out.println("Input Date of creationProduct 'day/month/year' ");
         String productionDate = keyboard.readLine();
 
         //this.ProductionDate = LocalDate.parse(stringDate,df);

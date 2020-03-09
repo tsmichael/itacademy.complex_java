@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class Expired {
 
     public static ArrayList<Product> findExpiredFoodProducts(ArrayList<Product> productList){
-        //System.out.println("Expired FoodProducts  => ");
+
 
         ArrayList<Product> returnedList = new ArrayList<>();
 

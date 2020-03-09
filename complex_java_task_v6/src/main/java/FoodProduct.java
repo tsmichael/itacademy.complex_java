@@ -40,6 +40,7 @@ public class FoodProduct extends Product{
 
         LocalDate dateOfCreation = LocalDate.parse(getProductionDate(),df);
 
+        //System.out.println("dateOfCreation "+dateOfCreation);
         Calendar c = Calendar.getInstance();
         c.clear();
         // add to Calendar values of ProductionDate  < year , month , day >
@@ -47,12 +48,18 @@ public class FoodProduct extends Product{
         c.set(Calendar.MONTH, dateOfCreation.getMonth().getValue()-1 );
         c.set(Calendar.DAY_OF_MONTH, dateOfCreation.getDayOfMonth());
 
+//        System.out.println("year "+ c.get(c.YEAR));
+//        System.out.println("month "+c.get(c.MONTH));
+//        System.out.println("day "+c.get(c.DAY_OF_MONTH));
         // adding SuitabilityDuration to ProductionDate for finding [DATE - OF - EXPIRED]
         c.add(c.DAY_OF_MONTH, SuitabilityDuration);
-
+//        System.out.println("calendar after : ");
+//        System.out.println("year "+ c.get(c.YEAR));
+//        System.out.println("month "+c.get(c.MONTH));
+//        System.out.println("day "+c.get(c.DAY_OF_MONTH));
         // [ Calendar to LocalDate ]
-        LocalDate expDate = LocalDate.of(c.get(c.YEAR),c.get(c.MONTH),c.get(c.DAY_OF_MONTH));
-
+        LocalDate expDate = LocalDate.of(c.get(c.YEAR),c.get(c.MONTH)+1,c.get(c.DAY_OF_MONTH));
+        //System.out.println("expired date : " +expDate);
         return expDate;
     }
 
@@ -60,7 +67,7 @@ public class FoodProduct extends Product{
     public String outExpiredDate(){
 
         LocalDate expDate = getExpiredDateValue();
-        String formattedDate = expDate.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT));
+        String formattedDate =expDate.toString();
         //System.out.println("Expiration date : " +expDate);
         return formattedDate;
     }
